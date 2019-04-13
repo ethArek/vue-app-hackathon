@@ -26,32 +26,38 @@
                 </div>
               </div>
               <div class="form-group">
-                <div class="col-1">
-                  <font-awesome-icon icon="user-tie" size="lg" />
+                <div class="row">
+                  <div class="col-1">
+                    <font-awesome-icon icon="key" size="lg" />
+                  </div>
+                  <div class="col-11">
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleInputPassword1"
+                      placeholder="Podaj hasło"
+                    />
+                  </div>
                 </div>
-                <div class="col-11">
-                  `<input
-                    type="password"
-                    class="form-control"
-                    id="exampleInputPassword1"
-                    placeholder="Podaj hasło"
+              </div>
+              <div class="d-flex justify-content-end">
+                <div class="form-check w-100 mt-1">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="exampleCheck1"
                   />
+                  <label
+                    class="form-check-label text-muted mb-2"
+                    for="exampleCheck1"
+                  >
+                    Zapamiętaj
+                  </label>
+                </div>
+                <div>
+                  <button type="submit" class="btn btn-danger">Zaloguj</button>
                 </div>
               </div>
-              <div class="form-check">
-                <input
-                  type="checkbox"
-                  class="form-check-input"
-                  id="exampleCheck1"
-                />
-                <label
-                  class="form-check-label text-muted mb-2"
-                  for="exampleCheck1"
-                >
-                  Zapamiętaj
-                </label>
-              </div>
-              <button type="submit" class="btn btn-danger">Zaloguj</button>
             </form>
           </div>
         </div>

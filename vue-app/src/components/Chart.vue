@@ -1,11 +1,33 @@
 <template>
   <div class="chart">
-    <div class="card">
-      <div class="card-header">
-        Jakiś tam wykres
-      </div>
-      <div class="card-body">
-        <canvas id="planet-chart"></canvas>
+    <div class="card mb-3 w-100">
+      <div class="card">
+        <div class="card-header">
+          Wykres
+          <hr />
+          <div>
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Dropdown button
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <canvas id="planet-chart"></canvas>
+        </div>
       </div>
     </div>
   </div>
