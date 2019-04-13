@@ -29,7 +29,7 @@
           </li>
 
           <li class="nav-item">
-            <router-link to="/">
+            <router-link to="/test">
               <a class="nav-link pt-3 pb-3" href="#">/</a>
             </router-link>
           </li>
