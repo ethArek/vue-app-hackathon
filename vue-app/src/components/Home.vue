@@ -26,18 +26,16 @@
                 </div>
               </div>
               <div class="form-group">
-                <div class="row">
-                  <div class="col-1">
-                    <font-awesome-icon icon="user-tie" size="lg" />
-                  </div>
-                  <div class="col-11">
-                    `<input
-                      type="password"
-                      class="form-control"
-                      id="exampleInputPassword1"
-                      placeholder="Podaj hasło"
-                    />`
-                  </div>
+                <div class="col-1">
+                  <font-awesome-icon icon="user-tie" size="lg" />
+                </div>
+                <div class="col-11">
+                  `<input
+                    type="password"
+                    class="form-control"
+                    id="exampleInputPassword1"
+                    placeholder="Podaj hasło"
+                  />
                 </div>
               </div>
               <div class="form-check">
