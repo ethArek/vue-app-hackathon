@@ -15,16 +15,60 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                Dropdown button
+                Wybierz interwał czasu
               </button>
               <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
+                <a class="dropdown-item" href="#">Tydzień</a>
+                <a class="dropdown-item" href="#">Miesiąc</a>
+                <a class="dropdown-item" href="#">3 miesiące</a>
               </div>
             </div>
           </div>
         </div>
+        <nav>
+          <div class="nav nav-tabs border-0 mt-4" id="nav-tab" role="tablist">
+            <a
+              class="nav-item nav-item-edit nav-link active ml-4"
+              id="nav-tab-0"
+              data-toggle="tab"
+              href="#chart0"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Wykres czegoś</a
+            >
+            <a
+              class="nav-item nav-item-edit nav-link"
+              id="nav-tab-1"
+              data-toggle="tab"
+              href="#chart0"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Wykres 2</a
+            >
+            <a
+              class="nav-item nav-item-edit nav-link"
+              id="nav-tab-1"
+              data-toggle="tab"
+              href="#chart0"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Wykres 3</a
+            >
+            <a
+              class="nav-item nav-item-edit nav-link"
+              id="nav-tab-1"
+              data-toggle="tab"
+              href="#chart0"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
+              >Wykres 4</a
+            >
+          </div>
+        </nav>
         <div class="card-body">
           <canvas id="planet-chart"></canvas>
         </div>
@@ -64,6 +108,14 @@ export default {
 <style scoped>
 .chart {
   margin-top: 20px;
+}
+
+.dropdown-item {
+  width: 208px;
+}
+
+.active {
+  background-color: #f5f5f5 !important;
 }
 
 .card {

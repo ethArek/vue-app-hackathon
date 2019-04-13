@@ -4,8 +4,8 @@
       <div class="col-3"></div>
       <div class="col-6">
         <div class="card border-0">
-          <div class="card-header bg-danger">
-            <h3 class="text-white">Logowanie</h3>
+          <div class="card-header bg-danger text-center">
+            <h4 class="text-white">Logowanie</h4>
           </div>
           <div class="card-body">
             <form class="p-3">
