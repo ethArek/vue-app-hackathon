@@ -1,15 +1,11 @@
-<template>
-  <div id="app">
-    <h1>{{ message }}</h1>
-  </div>
-</template>
+<template> </template>
 
 <script>
 export default {
-  name: "HelloWorld",
+  name: "Login",
   data() {
     return {
-      message: "xdd"
+      message: ""
     };
   },
   methods: {}

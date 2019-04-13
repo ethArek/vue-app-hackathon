@@ -1,16 +1,27 @@
 <template>
   <div id="app">
-    <router-view />
+    <Navbar />
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <router-view />
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import Chart from "@/components/Chart";
+import Navbar from "@/components/Navbar";
+import Home from "@/components/Home";
 
 export default {
   name: "App",
   components: {
-    Chart
+    Chart,
+    Navbar,
+    Home
   }
 };
 </script>
@@ -22,6 +33,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
