@@ -1,6 +1,13 @@
 <template>
   <div class="chart">
-    <canvas id="planet-chart"></canvas>
+    <div class="card">
+      <div class="card-header">
+        Jakiś tam wykres
+      </div>
+      <div class="card-body">
+        <canvas id="planet-chart"></canvas>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -32,4 +39,14 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped></style>
+<style scoped>
+.chart {
+  margin-top: 20px;
+}
+
+.card {
+  -webkit-box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.75);
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.75);
+}
+</style>
