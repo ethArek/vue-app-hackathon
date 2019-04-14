@@ -80,6 +80,7 @@
 <script>
 import transactionChartData from "./chart-data.js";
 import Chart from "chart.js";
+import Vue from "vue";
 
 export default {
   name: "Chart",
@@ -99,7 +100,19 @@ export default {
     }
   },
   mounted() {
-    this.createChart("transactionChart", this.transactionChartData);
+    Vue.axios.get("https://dog.ceo/api/breeds/image/random").then(response => {
+      //I tutaj w response będziesz miał to co zwróciłeś z API.
+      //console.log wypisuje co zwrociles (ctrl + shift + c żeby otworzyc konsole w przegladarce)
+      // w tym przykladzie zwraca linka do zdjecia jakiegos psa xd
+      // Ale jak uruchomisz u siebie server na localhoscie to tez przejdzie
+      console.log(response);
+
+      //teraz chodzi o to, zeby te dane ktore zwrociles dac do wykresu
+      //czyli jak będzie 1 wykres to
+      //do this.transactionChartData.data.datasets[0] (obczaj sobie plik chart-data.js)
+
+      this.createChart("transactionChart", this.transactionChartData);
+    });
   }
 };
 </script>

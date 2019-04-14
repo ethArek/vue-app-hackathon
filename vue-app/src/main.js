@@ -7,11 +7,10 @@ import router from "./router";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
-/*import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap-vue/dist/bootstrap-vue.css";
-import $ from "jquery";
-import Popper from "popper.js";*/
+import axios from "axios";
+import VueAxios from "vue-axios";
 
+Vue.use(VueAxios, axios);
 Vue.use(BootstrapVue);
 
 library.add(fas);
