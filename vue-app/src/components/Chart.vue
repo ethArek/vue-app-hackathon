@@ -111,6 +111,9 @@ export default {
       //czyli jak będzie 1 wykres to
       //do this.transactionChartData.data.datasets[0] (obczaj sobie plik chart-data.js)
 
+      //a this.transactionChartData.data.datasets[1] se możesz usunąć
+      //this.transactionChartData.data.datasets[1] = null;
+
       this.createChart("transactionChart", this.transactionChartData);
     });
   }
