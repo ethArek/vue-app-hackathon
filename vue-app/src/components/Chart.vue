@@ -35,7 +35,7 @@
               role="tab"
               aria-controls="nav-home"
               aria-selected="true"
-              >Wykres czegoś</a
+              >Wykres transakcji</a
             >
             <a
               class="nav-item nav-item-edit nav-link"
@@ -70,7 +70,7 @@
           </div>
         </nav>
         <div class="card-body">
-          <canvas id="planet-chart"></canvas>
+          <canvas id="transactionChart"></canvas>
         </div>
       </div>
     </div>
@@ -78,14 +78,14 @@
 </template>
 
 <script>
-import planetChartData from "./chart-data.js";
+import transactionChartData from "./chart-data.js";
 import Chart from "chart.js";
 
 export default {
   name: "Chart",
   data() {
     return {
-      planetChartData: planetChartData
+      transactionChartData: transactionChartData
     };
   },
   methods: {
@@ -99,7 +99,7 @@ export default {
     }
   },
   mounted() {
-    this.createChart("planet-chart", this.planetChartData);
+    this.createChart("transactionChart", this.transactionChartData);
   }
 };
 </script>

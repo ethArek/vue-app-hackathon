@@ -55,7 +55,11 @@
                   </label>
                 </div>
                 <div>
-                  <button type="submit" class="btn btn-danger">Zaloguj</button>
+                  <router-link to="/chart">
+                    <button class="btn btn-danger">
+                      Zaloguj
+                    </button>
+                  </router-link>
                 </div>
               </div>
             </form>
